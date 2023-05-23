@@ -37,5 +37,4 @@ def run_discord_bot():
             await send_message(message, userMessage, is_private=True)
         else:
             await send_message(message, userMessage, is_private=False)
-    print(os.getenv('KEY'))
     client.run(os.getenv('TOKEN'))
